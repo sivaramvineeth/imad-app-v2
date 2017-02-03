@@ -16,7 +16,7 @@ app.get('/siva', function (req, res) {
 app.get('ram', function (req, res) {
   res.send('There');
 });
-app.get('krish', function (req, res) {res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
+app.get('/krish', function (req, res) {res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
 
 app.get('/ui/madi.png', function (req, res) {
