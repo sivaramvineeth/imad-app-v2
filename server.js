@@ -9,8 +9,14 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('/ui/style.css', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'style.css'));
+app.get('/siva', function (req, res) {
+  res.send('The request will be served by osiva');
+});
+
+app.get('ram', function (req, res) {
+  res.send('There');
+});
+app.get('krish', function (req, res) {res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
 
 app.get('/ui/madi.png', function (req, res) {
