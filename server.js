@@ -10,7 +10,7 @@ app.get('/', function (req, res) {
 });
 
 app.get('/siva', function (req, res) {
-  res.send('The request will be served by osiva');
+  res.sendFile(path.join(__dirname,'ui','article-three.html'));
 });
 
 app.get('ram', function (req, res) {
