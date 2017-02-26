@@ -14,8 +14,9 @@ app.get('/siva', function (req, res) {
 });
 var counter=0;
 app.get('/counter',req,res)
- {counter=counter++;
- res.send(counter.toString())
+ {
+     counter= counter + 1;
+ res.send(counter.toString());
     
  }
 
