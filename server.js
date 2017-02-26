@@ -12,6 +12,12 @@ app.get('/', function (req, res) {
 app.get('/siva', function (req, res) {
   res.sendFile(path.join(__dirname,'ui','article-three.html'));
 });
+var counter=0;
+app.get('/counter',req,res)
+ {counter=counter++;
+ res.send(counter.toString())
+    
+ }
 
 app.get('ram', function (req, res) {
   res.send('There');
